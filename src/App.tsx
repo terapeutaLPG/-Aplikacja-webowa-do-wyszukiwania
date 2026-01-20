@@ -44,6 +44,7 @@ const Register = lazy(() => import("./pages/Register"));
 const Preferences = lazy(() => import("./pages/Preferences"));
 const Search = lazy(() => import("./pages/Search"));
 const Matches = lazy(() => import("./pages/Matches"));
+const Profile = lazy(() => import("./pages/Profile"));
 
 export default function App() {
   return (
@@ -55,6 +56,7 @@ export default function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/preferences" element={<Preferences />} />
+          <Route path="/profile" element={<Profile />} />
           <Route path="/search" element={<Search />} />
           <Route path="/matches" element={<Matches />} />
         </Routes>

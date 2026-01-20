@@ -27,7 +27,7 @@ const NavBar = memo(() => {
           color: "#646cff",
         }}
       >
-        🔍 FindBuddy
+        Aplikacja Webowa
       </Link>
 
       <div
@@ -60,6 +60,12 @@ const NavBar = memo(() => {
               style={{ textDecoration: "none", color: "#646cff" }}
             >
               Preferencje
+            </Link>
+            <Link
+              to="/profile"
+              style={{ textDecoration: "none", color: "#646cff" }}
+            >
+              Profil
             </Link>
             <Link
               to="/search"
