@@ -44,7 +44,6 @@ const Register = lazy(() => import("./pages/Register"));
 const Preferences = lazy(() => import("./pages/Preferences"));
 const Search = lazy(() => import("./pages/Search"));
 const Matches = lazy(() => import("./pages/Matches"));
-const ForgotPassword = lazy(() => import("./pages/ForgotPassword"));
 
 export default function App() {
   return (
