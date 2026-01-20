@@ -13,7 +13,6 @@ const PreferencesPage = memo(() => {
   });
   const [loading, setLoading] = useState(false);
 
-  // Załaduj preferencje z Firebase
   useEffect(() => {
     async function loadPreferences() {
       const user = auth.currentUser;

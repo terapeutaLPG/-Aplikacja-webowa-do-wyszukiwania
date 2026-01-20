@@ -44,7 +44,6 @@ const Search = memo(() => {
     return score;
   };
 
-  // Ładuj dopasowania przy załadowaniu komponentu
   useEffect(() => {
     const loadMatches = async () => {
       const user = auth.currentUser;
@@ -90,7 +89,6 @@ const Search = memo(() => {
           setMatchedUsers([]);
           setError("Brak innych użytkowników w bazie danych. Poproś znajomych o rejestrację!");
         } else {
-          // Znajdź dopasowania
           const matches = allUsers.filter(userPrefs => {
             const score = calculateMatch(userPrefs, myPrefs);
             return score >= 60;
@@ -117,7 +115,6 @@ const Search = memo(() => {
       }
     };
 
-    // Opóźnij ładowanie, aby dać czas Firebase na uwierzytelnienie
     const timer = setTimeout(loadMatches, 1000);
     return () => clearTimeout(timer);
   }, []);
